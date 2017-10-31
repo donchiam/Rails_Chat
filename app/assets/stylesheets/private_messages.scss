@@ -1,0 +1,30 @@
+// Place all the styles related to the private_messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+h1 {
+	font-family: 'Happy Monkey', cursive;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.btn-success {
+	margin-top: 1%;
+	font-size: 18px;
+}
+
+#private_message_body table {
+	width: 100%;
+	table-layout: fixed
+}
+
+#private_message_body th, td {
+	padding: 0px 0px;
+	
+}
+
+#private_message_body th {
+	text-align: center;
+}
+

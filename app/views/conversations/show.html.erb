@@ -1,0 +1,18 @@
+<h1>Chatting with <%= @conversation.with(current_user).name %></h1>
+
+<div id="conversation-main">
+  <div id="conversation-body">
+    <%= render @conversation.private_messages %>
+  </div>
+<br>
+<div id="conversation-form">
+  <%= form_for @private_message do |f| %>
+    <%= hidden_field_tag 'conversation_id', @conversation.id %>
+    <%= f.text_area :body, rows: 1, class: "form-control", autofocus: true %>
+    <%= f.submit "Send", class: "btn btn-success btn-xs"%>
+  <% end %>
+</div>
+<br>
+<span class="show_all"><%= link_to 'Show all private conversations', conversations_path %></span>
+
+</div>

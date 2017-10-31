@@ -1,0 +1,11 @@
+<div>
+  <li>
+    <div class="row">
+      <div class="<%= user.id == message.user_id ? 'message-sent' : 'message-received' %>">
+        <%= message.body %>
+      </div>
+    </div>
+  </li>
+</div>
+
+<%= link_to 'New Message', new_message_path %>

@@ -1,0 +1,27 @@
+<% if current_user %>
+<div id="hello">
+	<h1>Hello <%= current_user.username %>!</h1>
+</div>
+
+
+
+<div id="intro_message" class="col-sm-12">
+	<p>Chaos is everywhere! Please investigate a location.</p>
+</div>
+
+
+<div id="home_locations" class="col-sm-12">
+	
+		<h2>Locations you have visited:</h2>
+            <ul>
+              <% current_user.chats.each do |chat| %>
+                <li><%= link_to chat.name, chat, data: {behavior: "chat-link", chat_id: chat.id} %></li>
+              <% end %>
+            	<br>
+                <p class="show_chats"><%= link_to "- show other locations", chats_path %></p>
+            </ul>
+
+</div>
+<% end %>
+
+

@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<div id="show_chat" class="col-sm-12">
+<h1 class="chat_name">
+  Location: <span class="location_name"><%= @chat.name %></span>
+</h1>
+
+<div id="chat_message" data-behavior='messages'>
+	<table>
+		<tr>
+			<th>Message</th>
+			<th>Sender</th>
+			<th>Time</th>
+		</tr>
+		<% @messages.each do |message| %>
+		<tr>
+			<td><%= message.body %></td>
+			<td align="center"><%= message.user.username %></td>
+			<td align="center"><%= message.created_at %></td>
+		</tr>
+		<% end %>
+	</table>
+</div>
+<br>
+<div id="message_form">
+<%= form_for [@chat, Message.new] do |f| %>
+  <%= f.text_area :body, rows: 1, class: "form-control", autofocus: true %>
+  <%= f.submit "Send", class: "btn btn-success btn-xs"  %>
+<% end %>
+
+</div>
+<br>
+<span class="show_all"><%= link_to 'Show all locations', chats_path %></span>
+
+
+</div>

@@ -1,0 +1,14 @@
+<div id="new_private_message" class="col-sm-12">
+
+<h1>Private message to <%= @receiver.name %></h1>
+
+<%= form_for @private_message do |f| %>
+  <%= hidden_field_tag 'receiver_id', @receiver.id %>
+  <%= f.text_area :body, rows: 1, class: "form-control", autofocus: true%>
+
+  <%= f.submit "Send", class: "btn btn-success btn-xs"%>
+<% end %>
+<br>
+<p class="show_users"><%= link_to "show all users", users_path %></p>
+
+</div>

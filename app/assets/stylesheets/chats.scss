@@ -1,0 +1,77 @@
+// Place all the styles related to the chats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#locations {
+	position: fixed;
+	color: white;
+	text-shadow: 2px 2px black;
+	
+}
+#all_locations {
+	position: fixed;
+	margin-left: 0%;
+	font-size: 24px;
+}
+
+#all_locations td {
+	font-family: "Bangers", sans-serif;
+	font-size: 30px;
+	color: yellow;
+	text-shadow: 2px 2px black;
+
+}
+
+#all_locations a {
+	font-family: 'Happy Monkey', cursive;
+	font-size: 20px;
+	color: white;
+	text-shadow: 2px 2px black;
+} 
+
+.chat_name {
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.location_name {
+	color: yellow;
+	font-family: "Bangers", sans-serif;
+	text-shadow: 2px 2px black;
+}
+
+#chat_message {
+	background-color: black;
+	height: 250px;
+	padding-top: 10px;
+	padding-bottom: 120px;
+	padding-left: 10px;
+	font-size: 14px;
+	overflow: scroll;
+}
+
+#chat_message th, td {
+	padding: 10px 55px;
+	color: #7FFF00;
+	
+}
+
+#chat_message th {
+	text-align: center;
+}
+
+#chat_message > td > a {
+	font-size: 10px;
+}
+
+.btn-success, .btn-danger {
+	margin-top: 1%;
+	font-size: 18px;
+}
+
+.show_all a {
+	font-size: 24px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+

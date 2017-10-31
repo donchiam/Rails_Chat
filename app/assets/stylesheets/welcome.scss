@@ -1,0 +1,88 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(//fonts.googleapis.com/css?family=Patrick+Hand+SC|Bangers|Happy+Monkey);
+
+
+
+body {
+	width: 100%;
+	min-height: 100%;
+	height: 100%;
+    overflow: auto;
+	background-image: url("http://www.publicdomainpictures.net/pictures/40000/velka/tiny-red-dots-on-white.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+
+}
+
+h1 {
+	color: white;
+}
+
+#landing {
+	position: fixed; 
+	top: 7%; 
+	left: 70%;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 25px;
+	min-height: 550px;
+  	border: 10px double orange;
+  	padding: 10px;
+
+}
+
+#title {
+	font-size: 200px;
+	font-family: "Bangers", sans-serif;
+	color: yellow;
+	margin: 0 0 -1em 0;
+  	text-shadow: -6px -6px black, 6px 6px orange, 12px 12px orange;
+  	margin-left: 5%;
+  	transform: rotate(-10deg)
+}
+
+#welcome_text {
+	font-size: 28px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-family: 'Happy Monkey', cursive;
+}
+
+.authorize a{
+	font-family: "Bangers", sans-serif;
+	font-size: 50px;
+	color: red;
+	text-shadow: -2px -2px black, 2px 2px yellow, 4px 4px black;	
+}
+
+#login_form {
+	margin-top: 25%;
+	margin-left: 5%;
+	color: black;
+	font-size: 18px;
+	font-family: 'Happy Monkey', cursive;
+}
+
+.input {
+	width: 95%;
+	font-family: Courier;
+}
+
+.field {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+#signup_form {
+	margin-top: -25%;
+	width: 105%;
+	font-family: 'Happy Monkey', cursive;
+}
+

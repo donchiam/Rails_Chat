@@ -1,0 +1,26 @@
+// Place all the styles related to the Conversations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#conversation-body {
+	background-color: black;
+	height: 250px;
+	padding-top: 10px;
+	padding-bottom: 120px;
+	padding-left: 10px;
+	font-size: 14px;
+	overflow: scroll;
+}
+
+#all_conversations th {
+	color: white;
+	padding: 10px 55px;
+	font-size: 14px;
+	text-shadow: 2px 2px black;
+
+}
+
+#all_conversations td {
+	color: yellow;
+
+}

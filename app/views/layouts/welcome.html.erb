@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails Chat</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'welcome', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="fluid-container" style="margin-top: 70px">
+      <div class="row">
+        <div id="title">Superchat</div>
+        <div id="landing" class="col-sm-3">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

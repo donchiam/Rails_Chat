@@ -1,0 +1,20 @@
+<div id="login_form">
+	<h3>Log in to SuperChat</h3>
+	<br>
+	<%= form_tag "/sessions/create" do %>
+
+	<%= label_tag :email %>
+	<br>
+	<%= email_field_tag :email, params[:email], :class => "input" %>
+	<br>
+	<%= label_tag :password %>
+	<br>
+	<%= password_field_tag :password, params[:password], :class => "input" %>
+	<br>
+	<br>
+	<%= submit_tag "Log in", :class => "btn btn-success" %>
+	<br>
+	<br>
+	<h4>Need to sign up? Click <%= link_to 'here', sign_up_path %></h4>
+	<% end %>
+</div>

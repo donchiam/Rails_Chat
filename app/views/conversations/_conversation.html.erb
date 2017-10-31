@@ -1,0 +1,26 @@
+<div id="all_conversations">
+
+<table>
+  <thead>
+    <tr>
+      <th>Last message</th>
+      <th>Chatting with</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @conversations.each do |conversation| %>
+      <tr>
+        <td><%= conversation.private_messages.last.body.truncate(2) %>
+        <td align="center"><%= conversation.with(current_user).name %></td>
+        <td><%= link_to "View", conversation_path(conversation), class: "btn btn-success btn-xs" %></td>
+        <td><%= link_to "Leave", conversations_path(conversation), method: :delete, class: "btn btn-danger btn-xs" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+  <span class="back_home"><%= link_to "Back to home", root_path %></span>
+</div>
+

@@ -1,0 +1,75 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#hello {
+	margin-left: 5%;
+	color: white;
+	font-family: 'Happy Monkey', cursive;
+
+}
+
+#hello h1 {
+	font-size: 40px;
+	text-shadow: 3px 3px black;
+}
+
+#intro_message {
+	width: 90%;
+	min-height: 50px;
+	margin-left: 5%;
+	background-color: black;
+	padding: 2%;
+	border: 1px solid white;
+}
+
+#intro_message p {
+	font-size: 14px;
+	color: #7FFF00;
+
+}
+
+#home_locations {
+	margin-left: 5%;
+	font-family: 'Happy Monkey', cursive;
+	text-shadow: 2px 2px black;
+}
+
+#home_locations h2 {
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+#home_locations a {
+	color: yellow;
+	font-family: 'Happy Monkey', cursive;
+	font-size: 28px;
+	text-shadow: 2px 2px black;
+}
+
+.show_chats {
+	color: white;
+}
+
+#intro_message p {
+  overflow: hidden;
+  border-right: 1px solid #7FFF00;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  animation: 
+    typing 4s steps(40, end),
+    blink-caret .75s step-end infinite;
+}	
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #7FFF00; }
+}

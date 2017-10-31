@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<div id="user_profile">
+<h1>Profile for <%= @user.username %></h1>
+<p>
+  <strong>Name: </strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Username: </strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Email: </strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Image: </strong>
+  <%= @user.image %>
+</p>
+
+<% unless (@is_admin) %>
+<%= link_to 'Send a message', new_private_message_path(receiver_id: @user), class: "btn btn-success btn-xs start-conversation" %>
+<% end %>
+
+<% if (@is_admin) %>
+<%= link_to 'Edit', edit_user_path(@user), class: "btn btn-warning btn-xs" %>
+<%= link_to 'Delete', @user, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-xs" %>
+<% end %>
+<br>
+<br>
+<p class="show_users"><%= link_to 'Show all users', users_path %></p>
+
+</div>
+

@@ -1,0 +1,38 @@
+<%= yield %>
+
+
+<!--
+<h1>Rails Chat</h1>
+
+<div>
+	<% if current_user %>
+	<h2>Chat Rooms</h2>
+	<ul>
+		<% current_user.chats.each do |chat| %>
+		<li><%= link_to chat.name, chat, data: {behavior: "chat-link", chat_id: chat.id} %></li>
+              <% end %>
+    </ul>
+
+	<h2>Users</h2>
+	<ul>
+		<% @users.each do |user| %>
+			<li><%= user.email %></li>
+			<% end %>
+	</ul>
+	<% end %>
+</div>
+
+<div>
+	<h2>Chats</h2>
+	<ul>
+		<% @chats.each do |chat| %>
+			<%= render 'chats/chat', chat: chat, user: current_user %>
+			<% end %>
+	</ul>
+</div>
+
+
+
+<%= link_to 'All Chats', :chats %>
+<% end %>
+-->
