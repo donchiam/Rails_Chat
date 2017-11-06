@@ -13,6 +13,7 @@
   <% end %>
 
   <div id="edit_user_form">
+  <%= form_for @user, url: users_path, multipart: true do |form| %>
   <div class="field">
     <%= form.label :name %>
     <br>
@@ -50,6 +51,6 @@
   </div>
 
 <% end %>
-
+<% end %>
   </div>
   <% end %>

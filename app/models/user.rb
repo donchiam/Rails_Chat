@@ -10,7 +10,7 @@ class User < ApplicationRecord
   validates :name, :email, :presence => true
   validates :email, :uniqueness => { :case_sensitive => false }
   validates :email, :format => { :with => /@/, :message => " is invalid" }
-  has_attached_file :image, :styles => { medium: "100x100>", thumb: "200x200>", large: "600x600>"}, default_url: "/images/:style/missing.png"
+  has_attached_file :image, :styles => { medium: "100x100>", thumb: "200x200>", large: "600x600>"}, default_url: "missing.png"
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
 
   def self.authenticate(email, test_password)
