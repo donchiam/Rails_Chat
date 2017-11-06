@@ -37,7 +37,7 @@
 }
 
 #user_profile {
-	margin-left: 5%;
+	margin-left: 0%;
 }
 
 #user_profile p {
@@ -54,3 +54,33 @@
 	color: white;
 	font-size: 20px;
 }
+
+#user_image {
+	left: 30%;
+}
+
+#edit_user {
+	margin-top: 40%;
+	margin-left: 2%;
+}
+
+#edit_user a {
+	color: white;
+	font-size: 20px;
+}
+
+#edit_user_form {
+	margin-top: 0%;
+}
+
+.field {
+	color: white;
+	font-family: 'Happy Monkey', cursive;
+	font-size: 18px;
+	text-shadow: 2px 2px black;
+}
+
+.field input {
+	color: black;
+}
+

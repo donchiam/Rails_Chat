@@ -30,6 +30,10 @@
 
 </div>
 <br>
+<% if (@is_admin) %>
+<%= link_to 'Delete', @chat, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-xs" %>
+<% end %>
+
 <span class="show_all"><%= link_to 'Show all locations', chats_path %></span>
 
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171028163321) do
+ActiveRecord::Schema.define(version: 20171031120256) do
 
   create_table "chats", force: :cascade do |t|
     t.string "name"
@@ -72,6 +72,10 @@ ActiveRecord::Schema.define(version: 20171028163321) do
     t.integer "group_id"
     t.integer "chat_id"
     t.datetime "updated_at", null: false
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.integer "image_file_size"
+    t.datetime "image_updated_at"
     t.index ["chat_id"], name: "index_users_on_chat_id"
     t.index ["group_id"], name: "index_users_on_group_id"
   end

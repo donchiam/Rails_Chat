@@ -12,8 +12,7 @@
     </div>
   <% end %>
 
-  <div id="signup_form">
-  <h3>Sign up for SuperChat<h3>
+  <div id="edit_user_form">
   <div class="field">
     <%= form.label :name %>
     <br>
@@ -47,12 +46,10 @@
   </div>
   <br>
   <div class="actions">
-    <%= form.submit "Sign up", :class => "btn btn-success" %>
+    <%= form.submit "Save", :class => "btn btn-success" %>
   </div>
 
 <% end %>
-  <br>
-  <h4>Already signed up? Click <%= link_to 'here', log_in_path %> to log in</h4>
 
   </div>
   <% end %>
