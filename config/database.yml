@@ -50,5 +50,5 @@ test:
   database: superchat
   pool: 5
   username: PC
-  password: password
+  password: 
   timeout: 5000
